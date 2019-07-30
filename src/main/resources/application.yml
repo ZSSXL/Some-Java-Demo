@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://localhost/demo?useSSL=false&serverTimezone=GMT%2b8&characterEncoding=UTF-8
+    username: root
+    password: 20171109
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8080
